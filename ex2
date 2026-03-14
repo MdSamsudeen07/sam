@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Company Website</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
+
+<a class="navbar-brand" href="#">TechCompany</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+<li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+</div>
+
+</div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="bg-light text-center p-5">
+<div class="container">
+<h1>Welcome to TechCompany</h1>
+<p>We provide innovative software solutions</p>
+<button class="btn btn-primary">Learn More</button>
+</div>
+</section>
+
+<!-- About -->
+<section id="about" class="p-5">
+<div class="container">
+<h2 class="text-center">About Our Company</h2>
+<p class="text-center">
+TechCompany is a leading IT company providing web development,
+software development, and AI solutions for businesses.
+</p>
+</div>
+</section>
+
+<!-- Services -->
+<section id="services" class="bg-light p-5">
+<div class="container">
+<h2 class="text-center">Our Services</h2>
+
+<div class="row text-center">
+
+<div class="col-md-4">
+<div class="card p-3">
+<h4>Web Development</h4>
+<p>Responsive and modern websites.</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-3">
+<h4>Software Development</h4>
+<p>Custom software for business needs.</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-3">
+<h4>AI Solutions</h4>
+<p>Smart AI powered applications.</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- Team -->
+<section id="team" class="p-5">
+<div class="container">
+<h2 class="text-center">Our Team</h2>
+
+<div class="row text-center">
+
+<div class="col-md-4">
+<div class="card">
+<img src="https://via.placeholder.com/200" class="card-img-top">
+<div class="card-body">
+<h5>John</h5>
+<p>CEO</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+<img src="https://via.placeholder.com/200" class="card-img-top">
+<div class="card-body">
+<h5>Sarah</h5>
+<p>Developer</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+<img src="https://via.placeholder.com/200" class="card-img-top">
+<div class="card-body">
+<h5>Mike</h5>
+<p>Designer</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="bg-light p-5">
+<div class="container text-center">
+<h2>Contact Us</h2>
+<p>Email: info@techcompany.com</p>
+<p>Phone: +91 9876543210</p>
+<p>Location: Chennai, India</p>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center p-3">
+<p>© 2026 TechCompany. All Rights Reserved</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
