@@ -1,0 +1,116 @@
+html:
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz App</title>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<style>
+body{
+font-family: Arial;
+text-align:center;
+}
+
+#quiz-box{
+width:500px;
+margin:auto;
+border:1px solid gray;
+padding:20px;
+}
+
+button{
+padding:10px;
+margin-top:10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>Simple Quiz Application</h2>
+
+<div id="quiz-box">
+
+<h3 id="question"></h3>
+
+<div id="options">
+<label><input type="radio" name="answer" value="0"> <span id="opt0"></span></label><br>
+<label><input type="radio" name="answer" value="1"> <span id="opt1"></span></label><br>
+<label><input type="radio" name="answer" value="2"> <span id="opt2"></span></label><br>
+<label><input type="radio" name="answer" value="3"> <span id="opt3"></span></label><br>
+</div>
+
+<button id="next">Next</button>
+
+<h3 id="result"></h3>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+script:
+$(document).ready(function(){
+
+var quiz = [
+{
+question:"Which language is used for web development?",
+options:["Python","JavaScript","C++","Java"],
+answer:1
+},
+{
+question:"Which library is used for DOM manipulation?",
+options:["jQuery","NumPy","Pandas","TensorFlow"],
+answer:0
+},
+{
+question:"HTML stands for?",
+options:[
+"Hyper Text Markup Language",
+"High Text Machine Language",
+"Hyperlinks Text Mark Language",
+"None"
+],
+answer:0
+}
+];
+
+var index = 0;
+var score = 0;
+
+function loadQuestion(){
+
+$("#question").text(quiz[index].question);
+
+$("#opt0").text(quiz[index].options[0]);
+$("#opt1").text(quiz[index].options[1]);
+$("#opt2").text(quiz[index].options[2]);
+$("#opt3").text(quiz[index].options[3]);
+
+$("input[name='answer']").prop("checked",false);
+}
+
+loadQuestion();
+
+$("#next").click(function(){
+
+var selected = $("input[name='answer']:checked").val();
+
+if(selected == quiz[index].answer){
+score++;
+}
+
+index++;
+
+if(index < quiz.length){
+loadQuestion();
+}
+else{
+$("#quiz-box").html("<h2>Your Score: "+score+"/"+quiz.length+"</h2>");
+}
+
+});
+
